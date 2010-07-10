@@ -1,0 +1,1 @@
+/home/110101/devel/qt/qtcreator/xu/qpd_SockWidg_QtDesigner/qpd_sockwidg.h
