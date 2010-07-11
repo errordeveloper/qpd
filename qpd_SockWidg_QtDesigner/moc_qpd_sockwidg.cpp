@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qpd_sockwidg.h'
 **
-** Created: Thu Apr 22 22:57:24 2010
+** Created: Sun Jul 11 21:11:34 2010
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!

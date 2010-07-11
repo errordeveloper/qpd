@@ -73,4 +73,4 @@ void qpd_MainWindow::on_verticalSlider_valueChanged(int position)
         // can we just do this
         //_qpd_set(QString::prepend(QString::number(_s)));
 
-}
+}*/
