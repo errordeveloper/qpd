@@ -1,0 +1,24 @@
+This is a simple one way control interface for Pure Data
+from a QT application. It's a widget plugin for QT Creator IDE.
+
+It works with recent QT Creator 1.x and QT Designer,
+but it is useless with the Designer.
+
+To compile go to  ./qpd_SockWidg_QtDesigner/
+and use `qmake qpd_SockWidgPlugin.pro` then
+`make && make install`
+it will normally install into:
+/usr/lib/qt4/plugins/designer/
+
+there will be a library file and the source code directory,
+where the header file is meant to be found.
+this is convinient to do for me ATM.
+later we will probably install a library and a header file
+in /usr/lib/ and /usr/include/
+
+after you have installed it,
+use `new.csh MY_FIRST_qpd_app` script and it should all work!
+
+contact me if anything,
+-- 
+errordeveloper at gmail com
