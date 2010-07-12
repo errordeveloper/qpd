@@ -16,6 +16,15 @@ this is convinient to do for me ATM.
 later we will probably install a library and a header file
 in /usr/lib/ and /usr/include/
 
+you also want to append "/usr/lib/qt4/plugins/designer/"
+to "/etc/ld.so.conf" file or LD_LIBRARY_PATH variable,
+also some distributions use "/etc/ld.so.conf.d/"
+to store extra library path for local use.
+
+we should probably change this later ..
+once it's been decided what's better place for the library,
+and may be the plugin should be split ..suggestions welcome!
+
 after you have installed it,
 use `new.csh MY_FIRST_qpd_app` script and it should all work!
 
