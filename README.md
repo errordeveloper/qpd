@@ -13,6 +13,6 @@ just convenient to do for me at the moment. Later it will probably install a lib
 You also want to append `/usr/lib/qt4/plugins/designer/` to `/etc/ld.so.conf` file or `LD_LIBRARY_PATH` variable,<br>
 also some distributions use `/etc/ld.so.conf.d/` to store extra library path for local use.
 
-After it had been installed, use `new.csh MY_FIRST_qpd_app` script and it should all work!
+The `qpd-new-project-template` branch contains the UI template, this will be automated soon.
 
 Send questions and suggestions to `errordeveloper at gmail com` please!
