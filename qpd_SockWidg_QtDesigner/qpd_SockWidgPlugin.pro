@@ -5,7 +5,7 @@ TEMPLATE    = lib
 CONFIG += release
 
 
-INSTALLS += target sources
+INSTALLS += target sources # ?? headers
 
 INCLUDEPATH += $$PWD
 HEADERS += $$PWD/qpd_sockwidgplugin.h $$PWD/qpd_sockwidg.h
