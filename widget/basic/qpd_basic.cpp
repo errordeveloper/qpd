@@ -6,11 +6,11 @@
 
 #include <iostream>
 
-#include "qpd_sockwidg.h"
-#include "ui_qpd_sockwidg.h"
+#include "qpd_basic.h"
+#include "ui_qpd_basic.h"
 
-qpd_SockWidg::qpd_SockWidg(QWidget *parent)
-    : QWidget(parent) //, ui(new Ui::qpd_SockWidg)
+qpd_basic::qpd_basic(QWidget *parent)
+    : QWidget(parent) //, ui(new Ui::qpd_basic)
 {
     //ui->setupUi(this);
 
@@ -72,14 +72,14 @@ connect(qpd_Sock, SIGNAL(disconnected()), this, SLOT(connectionControlsEnable())
 }
 
 
-void qpd_SockWidg::disableConnectButton()
+void qpd_basic::disableConnectButton()
 {
     connectButton->setEnabled(!pd_host_LineEdit->text().isEmpty()
                                  && !pd_port_SpinBox->text().isEmpty());
     return;
 }
 
-void qpd_SockWidg::connectionControlsDisable()
+void qpd_basic::connectionControlsDisable()
 {
 
     if(!_connectionCheckBox->isChecked())
@@ -96,7 +96,7 @@ void qpd_SockWidg::connectionControlsDisable()
     return;
 }
 
-void qpd_SockWidg::connectionControlsEnable()
+void qpd_basic::connectionControlsEnable()
 {
     if(_connectionCheckBox->isChecked())
        _connectionCheckBox->setChecked(false);
@@ -112,7 +112,7 @@ void qpd_SockWidg::connectionControlsEnable()
 }
 
 
-void qpd_SockWidg::displayError(QAbstractSocket::SocketError _err_sock)
+void qpd_basic::displayError(QAbstractSocket::SocketError _err_sock)
 {
      // QMessageBox::information(this, tr("socketError"), tr("socketError"));
 
@@ -125,7 +125,7 @@ void qpd_SockWidg::displayError(QAbstractSocket::SocketError _err_sock)
 
  }
 
-void qpd_SockWidg::qpd_tcp_sock(void)
+void qpd_basic::qpd_tcp_sock(void)
 {
     connectButton->setEnabled(false);
     qpd_Sock->connectToHost(pd_host_LineEdit->text(),
@@ -135,7 +135,7 @@ void qpd_SockWidg::qpd_tcp_sock(void)
 
 }
 
-void qpd_SockWidg::qpd_hello()
+void qpd_basic::qpd_hello()
 {
 
     /* TEST
@@ -156,7 +156,7 @@ void qpd_SockWidg::qpd_hello()
 
 }
 
-void qpd_SockWidg::qpd_tcp_w(QString _qpd_m)
+void qpd_basic::qpd_tcp_w(QString _qpd_m)
 {
 
    _qpd_m.append(";\n");
@@ -166,13 +166,13 @@ void qpd_SockWidg::qpd_tcp_w(QString _qpd_m)
    return;
 }
 
-void qpd_SockWidg::qpd_tcp_c()
+void qpd_basic::qpd_tcp_c()
 {
 
 #ifdef CLOSE
 qpd_Sock->write(CLOSE);
 #endif
-    
+
     qpd_Sock->flush();
     qpd_Sock->close();  // qpd_Sock->disconnectFromHost();
     			// suppose that's the same, slower
@@ -187,7 +187,7 @@ qpd_Sock->write(CLOSE);
     return;
 }
 
-qpd_SockWidg::~qpd_SockWidg()
+qpd_basic::~qpd_basic()
 {
     // delete ui;
 }

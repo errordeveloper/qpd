@@ -1,5 +1,5 @@
-#ifndef QPD_SOCKWIDG_H
-#define QPD_SOCKWIDG_H
+#ifndef QPD_BASIC_H
+#define QPD_BASIC_H
 
 
 #include <QtCore/QObject>
@@ -22,17 +22,17 @@ QT_END_NAMESPACE
 
 // namespace Ui
 // {
-//     class qpd_SockWidg;
+//     class qpd_basic;
 // }
 
 
-class QDESIGNER_WIDGET_EXPORT qpd_SockWidg : public QWidget
+class QDESIGNER_WIDGET_EXPORT qpd_basic : public QWidget
 {
     Q_OBJECT
 
 public:
-    qpd_SockWidg(QWidget *parent = 0);
-    ~qpd_SockWidg();
+    qpd_basic(QWidget *parent = 0);
+    ~qpd_basic();
 
 public slots:
     void qpd_tcp_sock(); // init socket;
@@ -47,7 +47,7 @@ private slots:
     void qpd_tcp_c(); // close socket;
 
 private:
-    // Ui::qpd_SockWidg *ui;
+    // Ui::qpd_basic *ui;
 
     QLineEdit *pd_host_LineEdit;    QLabel *_put_col;
     QSpinBox *pd_port_SpinBox;      QCheckBox *_connectionCheckBox;
@@ -62,4 +62,4 @@ private:
     quint16 blockSize;
 };
 
-#endif // QPD_SOCKWIDG_H
+#endif // QPD_BASIC_H

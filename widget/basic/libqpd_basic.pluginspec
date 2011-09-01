@@ -16,6 +16,6 @@ General Public License version 2.1 as published by the Free Software
 Foundation.  Please review the following information to
 ensure the GNU Lesser General Public License version 2.1 requirements
 will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.</license>
-    <description>The qpd_SockWidg plugin for the Qt IDE.</description>
+    <description>qpd_basic plugin for the Qt IDE.</description>
     <url>http://new-synth.info</url>
 </plugin>

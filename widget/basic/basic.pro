@@ -8,10 +8,10 @@ CONFIG += release
 INSTALLS += target sources # ?? headers
 
 INCLUDEPATH += $$PWD
-HEADERS += $$PWD/qpd_sockwidgplugin.h $$PWD/qpd_sockwidg.h
-SOURCES += $$PWD/qpd_sockwidgplugin.cpp $$PWD/qpd_sockwidg.cpp
+HEADERS += $$PWD/qpd_basic_plugin.h $$PWD/qpd_basic.h
+SOURCES += $$PWD/qpd_basic_plugin.cpp $$PWD/qpd_basic.cpp
 
-OTHER_FILES = $$PWD/libqpd_SockWidgPlugin.pluginspec
+OTHER_FILES = $$PWD/libqpd_basic.pluginspec
 
 include(customwidget.pri)
 

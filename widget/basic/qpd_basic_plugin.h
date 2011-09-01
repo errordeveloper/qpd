@@ -1,16 +1,16 @@
 
-#ifndef QPD_SOCKWIDGPLUGIN_H
-#define QPD_SOCKWIDGPLUGIN_H
+#ifndef QPD_BASIC_PLUGIN_H
+#define QPD_BASIC_PLUGIN_H
 
 #include <QDesignerCustomWidgetInterface>
 
-class qpd_SockWidgPlugin : public QObject, public QDesignerCustomWidgetInterface
+class qpd_basic_plugin : public QObject, public QDesignerCustomWidgetInterface
 {
     Q_OBJECT
     Q_INTERFACES(QDesignerCustomWidgetInterface)
 
 public:
-    qpd_SockWidgPlugin( QObject *parent = 0 );
+    qpd_basic_plugin( QObject *parent = 0 );
 
     bool isContainer() const;
     bool isInitialized() const;
@@ -28,4 +28,4 @@ public:
 private:
     bool m_initialized;
 };
-#endif /* QPD_SOCKWIDGPLUGIN_H */
+#endif /* QPD_BASIC_PLUGIN_H */

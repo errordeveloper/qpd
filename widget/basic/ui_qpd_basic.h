@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading ui file 'qpd_sockwidg.ui'
+** Form generated from reading ui file 'qpd_basic.ui'
 **
 ** Created: Mon Nov 16 23:04:54 2009
 **      by: Qt User Interface Compiler version 4.5.3
@@ -7,8 +7,8 @@
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
 ********************************************************************************/
 
-#ifndef UI_QPD_SOCKWIDG_H
-#define UI_QPD_SOCKWIDG_H
+#ifndef UI_QPD_BASIC_H
+#define UI_QPD_BASIC_H
 
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
@@ -20,37 +20,37 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_qpd_SockWidg
+class Ui_qpd_basic
 {
 public:
     QLineEdit *lineEdit;
 
-    void setupUi(QWidget *qpd_SockWidg)
+    void setupUi(QWidget *qpd_basic)
     {
-        if (qpd_SockWidg->objectName().isEmpty())
-            qpd_SockWidg->setObjectName(QString::fromUtf8("qpd_SockWidg"));
-        qpd_SockWidg->resize(345, 96);
-        lineEdit = new QLineEdit(qpd_SockWidg);
+        if (qpd_basic->objectName().isEmpty())
+            qpd_basic->setObjectName(QString::fromUtf8("qpd_basic"));
+        qpd_basic->resize(345, 96);
+        lineEdit = new QLineEdit(qpd_basic);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setGeometry(QRect(4, 68, 127, 25));
 
-        retranslateUi(qpd_SockWidg);
+        retranslateUi(qpd_basic);
 
-        QMetaObject::connectSlotsByName(qpd_SockWidg);
+        QMetaObject::connectSlotsByName(qpd_basic);
     } // setupUi
 
-    void retranslateUi(QWidget *qpd_SockWidg)
+    void retranslateUi(QWidget *qpd_basic)
     {
-        qpd_SockWidg->setWindowTitle(QApplication::translate("qpd_SockWidg", "qpd_SockWidg", 0, QApplication::UnicodeUTF8));
-        Q_UNUSED(qpd_SockWidg);
+        qpd_basic->setWindowTitle(QApplication::translate("qpd_basic", "qpd_basic", 0, QApplication::UnicodeUTF8));
+        Q_UNUSED(qpd_basic);
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class qpd_SockWidg: public Ui_qpd_SockWidg {};
+    class qpd_basic: public Ui_qpd_basic {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_QPD_SOCKWIDG_H
+#endif // UI_QPD_BASIC_H

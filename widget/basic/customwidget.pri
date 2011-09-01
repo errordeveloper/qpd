@@ -1,3 +1,3 @@
-#HEADERS = $$PWD/qpd_sockwidg.h
-#SOURCES = $$PWD/qpd_sockwidg.cpp
-#OTHER_FILES = $$PWD/libqpd_SockWidgPlugin.pluginspec
+#HEADERS = $$PWD/qpd_basic.h
+#SOURCES = $$PWD/qpd_basic.cpp
+#OTHER_FILES = $$PWD/libqpd_basic.pluginspec
