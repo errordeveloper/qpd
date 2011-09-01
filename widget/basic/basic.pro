@@ -17,10 +17,11 @@ include(customwidget.pri)
 
 #target.path = $$[QT_INSTALL_PLUGINS]/designer
 #target.path = /usr/lib/qtcreator/plugins/Local
+
 target.path = $$[QT_INSTALL_PLUGINS]/designer
 sources.files = $$SOURCES $$HEADERS *.pro
 sources.path = $$[QT_INSTALL_PLUGINS]/designer/$$qtLibraryTarget($$TARGET).src
 
-## well, the header will go in a better place
+## well, the header should go in a better place
 ## but the idea is that suppose we want to set write
 ## permissions on that path for QT developer :)

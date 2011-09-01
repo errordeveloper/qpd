@@ -1,4 +1,4 @@
-<plugin name="qpd_SockWidgPlugin" version="0.2" compatVersion="0.1">
+<plugin name="qpd_basic" version="0.3" compatVersion="0.1">
     <vendor>errordevelopment</vendor>
     <copyright>(C) 2009 errordeveloper</copyright>
     <license>
