@@ -5,11 +5,15 @@ It works with recent _QT Creator 1.x_ and _QT Designer_, but it is useless with 
 ## Get the source code, compile and run blank qpd canvas
 
 Clone the repository on you machine:
+                
                 git clone git://github.com/errordeveloper/qpd.git
+
 clone the sub-projects:
+                
                 cd qpd && git submodule update --init
-or just do `make basic-example`. If the window pops-up - yahoo-oo, it works!
-Use ^C to interrupt it and you can not do whatever you wish in `projects` directory.
+                
+or just do `make basic-example`. If the window pops-up - yahoo-oo, it works!<br>
+Use `^C` to interrupt it and you can not do whatever you wish in `projects/`.<br>
 I recoment creating a local branch (`cd projects/ ; git branch local ; git checkout local`).
 
 See `TODO.md` for what needs to be done ...
