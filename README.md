@@ -2,17 +2,16 @@ This is a simple one way control interface for _Pure Data_ from a QT application
 
 It works with recent _QT Creator 1.x_ and _QT Designer_, but it is useless with the second.
 
-To compile go to  `./qpd_SockWidg_QtDesigner/` and use `qmake qpd_SockWidgPlugin.pro` then `make && make install`.<br>
-It will normally install into `/usr/lib/qt4/plugins/designer/`, hence you may need to adjust the command or set<br>
-write permissions for this directory according to your needs and policies.
+## Get the source code, compile and run blank qpd canvas
 
-There will be a library file and the source code directory, where the header file is meant to be found. This is<br>
-just convenient to do for me at the moment. Later it will probably install a library and a header file in<br>
-`/usr/lib/` and `/usr/include/` respectively.
+Clone the repository on you machine:
+          git clone git://github.com/errordeveloper/qpd.git
+clone the sub-projects:
+          cd qpd && git submodule update --init
+or just do `make basic-example`. If the window pops-up - yahoo-oo, it works!
+Use ^C to interrupt it and you can not do whatever you wish in `projects` directory.
+I recoment creating a local branch (`cd projects/ ; git branch local ; git checkout local`).
 
-You also want to append `/usr/lib/qt4/plugins/designer/` to `/etc/ld.so.conf` file or `LD_LIBRARY_PATH` variable,<br>
-also some distributions use `/etc/ld.so.conf.d/` to store extra library path for local use.
+See `TODO.md` for what needs to be done ...
 
-The `qpd-new-project-template` branch contains the UI template, this will be automated soon.
-
-Send questions and suggestions to `errordeveloper at gmail com` please!
+Send questions and suggestions to `errordeveloper -at- g m a i l -dot- com` please!
