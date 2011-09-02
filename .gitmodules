@@ -1,0 +1,6 @@
+[submodule "projects"]
+	path = projects
+	url = git@github.com:/errordeveloper/qpd.git
+[submodule "widgets"]
+	path = widgets
+	url = git@github.com:/errordeveloper/qpd.git
